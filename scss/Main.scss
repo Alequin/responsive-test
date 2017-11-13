@@ -1,9 +1,50 @@
-body{
-  background-color: black;
+
+.main-container{
+  margin: auto;
+}
+
+.row{
+  width: 100%;
+
+  .square{
+    $size: 200px;
+    width: $size;
+    height: $size;
+    background: white;
+  }
+}
+
+
+@media only screen and (min-width: 480px){
+  body{
+    background-color: black;
+  }
+
+  .main-container{
+    width: 70%;
+  }
+
+  .row{
+    display: flex;
+    justify-content: center;
+    
+    .square{
+      margin: 10px;
+    }
+  }
+
 }
 
 @media only screen and (max-width: 480px){
   body{
     background-color: red;
+  }
+
+  .main-container{
+    width: 90%;
+  }
+
+  .square{
+    margin: 10px auto;
   }
 }
