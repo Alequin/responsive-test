@@ -1,3 +1,4 @@
 alias prj-open="open -a 'Google Chrome' file:///Users/james/work-space/responsive-design/responsive-prac/index.html"
+alias pack="npm start"
 
 echo "Project aliases have been loaded"
